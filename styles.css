@@ -1,0 +1,114 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #334257;
+}
+
+.header__title {
+    color: white;
+    margin: 5px 30px;
+}
+
+/*División de los talleres*/
+.taller__title {
+    text-align: center; 
+}
+.taller__paragraph {
+    margin-left: 50px;
+}
+
+/*Sections de los formularios*/
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+.container {
+    min-width: 25%;
+    height: auto;
+    margin: 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;  
+    border-radius: 25px;
+    background-color: #EEEEEE;
+}
+
+.container__title {
+    background-color: #476072;
+    color: white;
+    text-align: center;
+    margin: 0%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: 15px;
+    padding: 17px;
+    margin-bottom: 10px; 
+    font-weight: bold;
+}
+
+.container__form-label {
+    font-size: 14px;
+}
+
+.container__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.input {
+    margin: 20px auto;
+    border-radius: 25px;
+    background: transparent;
+    border: 1px solid #777;
+    width: 50%;
+    padding: 5px;
+    outline: none;
+    text-align: center;
+}
+
+#inputBase {
+    margin-left: 5px ;    
+}
+
+.datos {
+    display: flex;
+}
+
+.container__form-resultado {
+    font-size: 14px;
+}
+
+.button__container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container__form-button {
+    width: 40%;
+    height: 30px;
+    border-radius: 25px;
+    margin: 15px 5px;
+    border: none;
+    background-color: #548CA8;
+    cursor: pointer;
+    color: white;
+    
+    transition: all .7s ease;
+}
+
+.container__form-button:hover {
+    background: #334257;
+}
