@@ -69,7 +69,6 @@ const calcularPerimetroTriangulo = () => {
     base = parseInt($base.value),
     $resultado = document.querySelector(".container__form-triangulo");
 
-    $resultado.innerHTML = `<p> El perimetro del cuadrado es: ${perimetroTrinagulo(value, base)} </p>`;
 }
 
 const calcularAreaTriangulo = () => {
@@ -91,3 +90,15 @@ const calcularAlturaTriangulo = () => {
 
     $resultado.innerHTML = `<p> El área del cuadrado es: ${alturaTriangulo(value, base).toFixed(2)} </p>`
 }
+
+
+const alturaTriangulo = (lados, base)  => Math.sqrt(((Math.pow(lados, 2))-(Math.pow((base / 2),2))));
+
+const validarTrianguloIsosceles = (ladoA, ladoB, base) =>{
+
+    if((ladoA === ladoB) && ladoA  !== base) return console.log(`Es un trinagulo isósceles y su altura es: ${alturaTriangulo(ladoA, base).toFixed(2)}`);
+
+    return console.log("No es un trinagullo Isósceles");
+}
+
+validarTrianguloIsosceles(6, 6, 8);
