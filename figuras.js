@@ -1,3 +1,4 @@
+//Figuras Geométricas 
 //codifo del cuadrado
 
 const perimetroCuadrado = (lado) => lado * 4;
@@ -92,7 +93,6 @@ const calcularAlturaTriangulo = () => {
 }
 
 
-const alturaTriangulo = (lados, base)  => Math.sqrt(((Math.pow(lados, 2))-(Math.pow((base / 2),2))));
 
 const validarTrianguloIsosceles = (ladoA, ladoB, base) =>{
 
@@ -102,3 +102,5 @@ const validarTrianguloIsosceles = (ladoA, ladoB, base) =>{
 }
 
 validarTrianguloIsosceles(6, 6, 8);
+
+
