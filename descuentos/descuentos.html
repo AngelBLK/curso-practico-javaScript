@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentajes y descuentos</title>
+    <link rel="stylesheet" href="descuentos.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title"> Curso Practico de JavaScript </h1>
+        <ul class="menu">
+            <li class="menu__li-link"><a class="menu__li-link" href="../figuras.html">Taller 1</a></li>
+            <li class="menu__li-link"><a class="menu__li-link" href="/">Taller 3</a></li>
+        </ul>
+    </header>
+    <div class="taller">
+        <h2 class="taller__title">Descuentos y Porcentajes</h2>
+        <p class="taller__paragraph">Segundo Taller del curso práctico de JavaScript</p>
+    </div>
+    <main class="main">
+        <h2 class="main__title">Descuento</h2>
+        <form class="main__form">
+            <label for="inputPrice">Escribe el precio de tu producto:</label>
+            <input  class="input" id="inputPrice" type="number" placeholder="Precio del Producto">
+            <label for="inputDiscount">Escribe el descuento de tu producto:</label>
+            <input class="input" id="inputDiscount" type="number" placeholder="Descuento">
+            <label for="inputCoupon">¿Tienes un cupon?</label>
+            <input class="input" id="inputCoupon" type="text" placeholder="Cupon">
+            <button class="main__form-buton" type="button" onclick="priceDiscount()">Calcular</button>
+
+            <p class="resultPrice"></p>
+        </form>
+    </main>
+
+    <script src="descuentos.js"></script>
+</body>
+</html>
