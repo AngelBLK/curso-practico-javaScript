@@ -11,19 +11,48 @@ body {
     display: flex;
     align-items: center;
     background-color: #334257;
+    justify-content: space-between;
 }
 
+.menu {
+    width: 200px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    
+}
+
+.menu__li-link{
+    color: #EEEEEE ;
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+
+.menu__li-link:hover {
+    text-decoration: underline;
+}
+
+
+
 .header__title {
-    color: white;
+    color: #EEEEEE;
     margin: 5px 30px;
 }
 
 /*División de los talleres*/
 .taller__title {
     text-align: center; 
+    color: #EEEEEE;
+    font-size: 30px;
+    font-weight: 800;
 }
 .taller__paragraph {
     margin-left: 50px;
+    color: #EEEEEE;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 /*Sections de los formularios*/
