@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media, Moda y Mediana</title>
+    <link rel="stylesheet" href="estadistica.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title"> Curso Practico de JavaScript </h1>
+
+        <ul class="menu">
+            <li class="menu__li-link"><a class="menu__li-link" href="/figuras.html">Taller 1</a></li>
+            <li class="menu__li-link"><a class="menu__li-link" href="/descuentos/descuentos.html">Taller 2</a></li>
+            <li class="menu__li-link"><a class="menu__li-link" href="/estadistica/estadistica.html">Taller 4</a></li>
+        </ul>
+
+    </header>
+
+    <div class="taller">
+        <h2 class="taller__title">Figuras Geométricas</h2>
+        <p class="taller__paragraph">Primer Taller del curso practico de JavaScript</p>
+    </div>
+
+    <main class="main">
+        <h2 class="main__title">Descuento</h2>
+        <form class="main__form">
+            <label for="inputPrice">Escribe tus elementos :</label>
+            <input  class="input" id="inputArray" type="text" placeholder="Arreglo de numeros []">
+            <div class="menu__buttons">
+                <button class="main__form-buton" type="button" onclick="promedio()">Calcular Promedio</button>
+                <button class="main__form-buton" type="button" onclick="mediana()">Calcular Mediana</button>
+                <button class="main__form-buton" type="button" onclick="moda()">Calcular Moda</button>
+            </div>
+
+            <p class="result"></p>
+        </form>
+    </main>
+
+    <script src="/estadistica/estadistica.js"></script>
+</body>
+</html>
